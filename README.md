@@ -7,7 +7,8 @@ HOW TO -
 
 https://github.com/liquity/liquity - DOCKER OR GITHUB 
 
-I used docker - 
+DOCKER QUICKSTART ---
+
 
 docker pull liquity/dev-frontend
 docker run --name liquity -d --rm -p 3000:80 liquity/dev-frontend
