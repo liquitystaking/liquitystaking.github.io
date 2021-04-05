@@ -11,6 +11,7 @@ https://github.com/liquity/liquity - DOCKER OR GITHUB
 
 
 docker pull liquity/dev-frontend
+
 docker run --name liquity -d --rm -p 3000:80 liquity/dev-frontend
 
 ## confirm running in browser or if setup via VPS then run below 
