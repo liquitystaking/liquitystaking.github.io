@@ -30,4 +30,4 @@ docker run --name liquity -d --rm -p 3000:80 liquity/dev-frontend
   
   go to http://localhost:3000 (clear cache if need be) and do setup to set kickback rate. Try on Kovan or Ropsten before Main Net! 
   
-  For free domain I used noip.com :) 
+  For free domain I used https://noip.com :) 
