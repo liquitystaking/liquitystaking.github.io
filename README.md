@@ -12,14 +12,17 @@ I used docker -
 docker pull liquity/dev-frontend
 docker run --name liquity -d --rm -p 3000:80 liquity/dev-frontend
 
- confirm running in browser or if config over vps then ssh -L 3000:localhost:3000 USER@VPS.IP then 
+ confirm running in browser or if config over vps then 
+ 
+ ssh -L 3000:localhost:3000 USER@VPS.IP then 
  
  check web browser http://localhost:3000
  
- 
  docker kill liquity
  
- now run docker run --name liquity -d --rm -p 3000:80 \
+ Restart Docker with User Variables
+ 
+ docker run --name liquity -d --rm -p 3000:80 \
   -e FRONTEND_TAG=(YOURETHADDRESS) \
   -e INFURA_API_KEY=(YOURINFURAKEY) \
   liquity/dev-frontend
