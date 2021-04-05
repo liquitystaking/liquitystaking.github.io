@@ -28,6 +28,12 @@ docker run --name liquity -d --rm -p 3000:80 liquity/dev-frontend
   -e INFURA_API_KEY=(YOURINFURAKEY) \
   liquity/dev-frontend
   
-  go to http://localhost:3000 (clear cache if need be) and do setup to set kickback rate. Try on Kovan or Ropsten before Main Net! 
+ ## go to http://localhost:3000 (clear cache if need be) and do setup to set kickback rate. Try on Kovan or Ropsten before Main Net! 
+ 
+ ## Copy files from docker to folder for static host
+ 
+ docker cp liquity:/usr/share/nginx/html ./devui
+
+## Host on Github!!
   
   ## For free domain I used https://noip.com :) 
